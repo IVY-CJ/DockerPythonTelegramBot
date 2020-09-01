@@ -31,3 +31,9 @@
 - `<Github X-Oauth Token>: https://<Token>:x-oauth-basic@github.com/<Username>/<Repository>.git to the docker-compose file`
 
 ## Notes:
+*Environment Variables can be used in Python with os*
+```py
+import os
+
+BOT_TOKEN = os.environ['BOT_TOKEN']
+```
