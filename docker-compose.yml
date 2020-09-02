@@ -1,7 +1,11 @@
 version: '3'
 
-services:
-  telegram_bot:
-    build: .
+services: 
+  telegram_bot: 
+    build:
+      context: .
+      args:
+        XAUTH: '<Token>'
     environment:
       BOT_TOKEN: '<API Token>'
+      BOT_FILE: '<Bot File Name>'
